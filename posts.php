@@ -20,3 +20,12 @@
  * dosyasını döngü içinde dahil etmeli ve her yazı için detayları göstermelisiniz.
  */
 
+include_once("functions.php"); //functions dosyasını dahil eder.
+
+$rand_post_count = getRandomPostCount(1, 15); // 1 ila 15 arasında rasgele integer sayı döndürür
+$posts = getLatestPosts($rand_post_count); // rasgele post sayı değerine göre son postları dizi olarak getirir.
+
+foreach ($posts as $id => $post) {
+   include('post.php'); // Geçerli post içeriğini getirir.
+}
+
