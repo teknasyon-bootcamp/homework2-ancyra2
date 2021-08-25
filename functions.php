@@ -20,7 +20,7 @@
  $server_base = basename($_SERVER['PHP_SELF']);
  
  if($server_base == $file_base) { // Eğer iki dosyanın isimleri eşit ise 
-    die ("$file_base dosyasına doğrudan erişilemez"); // functions.php dosyasına erişilemez ve hata mesajı verir
+    die ("$file_base dosyasına doğrudan erişilemez"); // functions.php dosyası çalıştırmayı durdurur ve hata mesajı verir
  }else { // Eğer iki dosyanın isimleri eşit değil ise aşağıdaki kodları çalıştırır  
     function getLatestPosts($count = 5)
     {
