@@ -19,9 +19,9 @@
  $file_base = basename(__FILE__);
  $server_base = basename($_SERVER['PHP_SELF']);
  
- if($server_base == $file_base) {
-    die ("$file_base dosyasına doğrudan erişilemez");
- }else {
+ if($server_base == $file_base) { // Eğer iki dosyanın isimleri eşit ise 
+    die ("$file_base dosyasına doğrudan erişilemez"); // functions.php dosyasına erişilemez ve hata mesajı verir
+ }else { // Eğer iki dosyanın isimleri eşit değil ise aşağıdaki kodları çalıştırır  
     function getLatestPosts($count = 5)
     {
         $posts = [];
