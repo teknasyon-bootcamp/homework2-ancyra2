@@ -23,7 +23,7 @@
  * - `getPostDetails` fonksiyonu tetiklenerek ilgili içeriğin çıktısı gösterilmeli.
  */
 
-//error_reporting(0); // Hata kodlarını bastırır. * Test edildikten sonra eklenmiştir. 
+
 
 include_once("functions.php"); //functions dosyasını dahil eder.
 
