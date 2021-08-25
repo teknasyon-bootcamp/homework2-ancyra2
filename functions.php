@@ -15,7 +15,7 @@
  * istiyoruz. Ek olarak, `getRandomPostCount` isminde bir fonksiyon tanımlamanızı
  * bekliyoruz. Bununla ilgili detaylı bilgi diğer betiklerde yer alıyor.
  */
-
+  
  $file_base = basename(__FILE__);
  $server_base = basename($_SERVER['PHP_SELF']);
  
@@ -55,11 +55,10 @@
     
     // Aşağıya fonksiyonu tanımlayabilirsiniz.
     
-    function getRandomPostCount($min, $max) {
+    function getRandomPostCount($min, $max) { // Belirlenen iki aralıkta rastgele integer sayı döndürür
         return rand($min, $max);
     }
-    
-    
+      
  }
 
    

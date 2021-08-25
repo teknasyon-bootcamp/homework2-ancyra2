@@ -23,9 +23,9 @@
  * - `getPostDetails` fonksiyonu tetiklenerek ilgili içeriğin çıktısı gösterilmeli.
  */
 
+ 
 
-
-include_once("functions.php"); //functions dosyasını dahil eder.
+include_once("functions.php");
 
 if(!isset($posts)){ // Eğer yukarıda $posts isimli değişken tanımlanmadıysa aşağıdaki kodları çalıştırır.
 
