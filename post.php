@@ -27,10 +27,10 @@
 
 include_once("functions.php");
 
-if(!isset($posts)){ // Eğer yukarıda $posts isimli değişken tanımlanmadıysa aşağıdaki kodları çalıştırır.
+if(!isset($posts)){ // Eğer yukarıda $posts isimli değişken tanımlanmadıysa aşağıdaki kodları çalıştırır
 
     $rand_post_count = getRandomPostCount(1, 15); // 1 ila 15 arasında rasgele integer sayı döndürür
-    $posts = getLatestPosts($rand_post_count); // rasgele post sayı değerine göre son postları dizi olarak getirir.
+    $posts = getLatestPosts($rand_post_count); // rasgele post sayı değerine göre son postları dizi olarak getirir
     
     
     foreach($posts as $id => $post){ 
@@ -80,7 +80,7 @@ if(!isset($posts)){ // Eğer yukarıda $posts isimli değişken tanımlanmadıys
     }
 
 }
-else {
+else { // Eğer yukarıda $posts isimli değişken tanımlandıysa aşağıdaki kodları çalıştırır
     
     if(!isset($id)){
 
