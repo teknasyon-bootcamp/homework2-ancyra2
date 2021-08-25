@@ -57,15 +57,7 @@ if(!isset($posts)){ // Eğer yukarıda $posts isimli değişken tanımlanmadıys
 
     $posts[] = $my_post; //$my_post adlı post u $posts dizisine ekler
 
-    foreach($posts as $id => $post){ 
-        if(!isset($post['title'])){ // Eğer posts array içerisindeki geçerli dizi değeri içerisinde $title değeri tanımlı değilse,
-            $post['title'] = "Added Title"; // mevcut post dizisine 'title' değeri ekle
-        }
-        if(!isset($post['type'])){ // Eğer posts array içerisindeki geçerli dizi değeri içerisinde $type değeri tanımlı değilse,
-            $post['type'] = "warning"; // mevcut post dizisine 'type' değeri ekle
-        }
-    }
-    
+
     foreach($my_post as $id => $post){ 
     
         if($post['type'] =="urgent") { // $post dizisinde "type" değerine göre div içerisinde background-color stilini oluşturur
